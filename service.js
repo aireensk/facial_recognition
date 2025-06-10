@@ -13,7 +13,9 @@ let label1 = "", confidence1 = 0;
 // 3. draw()
 function preload() {
     // load a pretrained image classification model from teachable machine
-    classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/NR7nPD0KR/"); // Male vs female
+    // classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/miHdG3zgH/"); // Glasses vs No Glasses
+    classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/4eYmOqKmj/"); // Young vs Old
+    // classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/NR7nPD0KR/"); // Male vs female
 }
 
 function setup() {
